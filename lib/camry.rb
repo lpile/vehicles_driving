@@ -1,11 +1,9 @@
-class Camry
-  def start
-    "Engine on!"
-  end
+require_relative 'engine'
+require_relative 'air_conditioning'
 
-  def stop
-    "Engine off!"
-  end
+class Camry
+  include Engine
+  include AirConditioning
 
   def drive
     "Back wheels go!"
